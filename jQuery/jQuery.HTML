@@ -14,16 +14,34 @@
 
 <div>
     <H2 style="color: dimgrey;text-align: center;font-weight: 600;font-size: 30px;">j-query</H2>
-    <div>
+    <div class="about" style="display: flex;align-items: center;justify-content: center;gap: 30px;">
+        <img style="border-radius: 20px;" src="./jquery.jpg" alt="">
+
+        <h2>hii</h2>
+        <h2>hii</h2>
+        <h2>hii</h2>
+
+<h2 style="font-weight: 400;width: 45%;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore accusamus iure consectetur nulla maiores ullam ducimus saepe, culpa quo voluptas? Tempore, odio! Earum soluta praesentium aliquid labore in eveniet, excepturi impedit aliquam nemo animi quaerat nesciunt odio qui tempora amet fugit ipsum quidem maiores perferendis aspernatur. Pariatur alias laboriosam nihil excepturi! Quibusdam, numquam quasi voluptates beatae sunt dicta sed pariatur.</h2> 
+    </div>
+    <div style="display: flex;justify-content: center;padding: 10px;gap: 10px;">
+        <button id="aboutt"  style="font-size: 20px;width: 100px;height: 40px;color: black;background-color: orangered;font-weight: 500;border-radius: 10px;" onclick="click()" >About</button>
+        <button id="show"  style="font-size: 20px;width: 100px;height: 40px;color: black;background-color: orangered;font-weight: 500;border-radius: 10px;" onclick="click()" >About</button>
+        <button id="togglee"  style="font-size: 20px;width: 100px;height: 40px;color: black;background-color: orangered;font-weight: 500;border-radius: 10px;" onclick="click()" >About</button>
 
     </div>
-</div>   
-    
-    <script>
-    $(".name").mouseenter(function(){
-     $(this).hide("show",0.6) 
-    })
 
-    </script>
+</div>  
+    <script>
+$("#aboutt").click(function () {
+$(".about").slideDown(3000)
+})
+$("#show").click(function () {
+    $(".about").slideUp()
+})
+$("#togglee").click(function () {
+    $(".about").fadeToggle("slow",0.5,2000)
+})
+
+</script>
 </body>
 </html>
